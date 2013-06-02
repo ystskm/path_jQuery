@@ -36,12 +36,12 @@
 
   var paths = {};
 
-  module.exports = function() {
+  module.exports = (function() {
     return {
       svr: svr,
       bws: bws
     };
-  }();
+  })();
 
   function svr(target, options) {
     options = mixin({}, options);
