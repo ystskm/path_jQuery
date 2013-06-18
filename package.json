@@ -1,7 +1,7 @@
 {
   "name": "jQuery",
   "description": "jQuery.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "ystskm <brilliantpenguin@gmail.com> | ystk_skm@twitter",
   "repository": {
         "type": "git",
@@ -9,7 +9,7 @@
     },
   "main": "./index",
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.8.22"
   },
   "licenses": [{
       "type": "MIT",
