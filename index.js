@@ -8,7 +8,7 @@
 
   //READ EXTERNAL_CONDITION
   var _C = global.EXTERNAL_CONDITION || {}, Cons = {
-    Version: _C.jQuery_version || '2.1.0',
+    Version: _C.jQuery_version || '2.1.1',
     VersionOne: _C.jQuery_version_one || '1.10.2',
     FlagVersionOne: _C.jQuery_flag_version_one || '1',
     HttpRoot: _C.http_root || '/',
