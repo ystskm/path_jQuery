@@ -12,7 +12,7 @@
     VersionOne: _C.jQuery_version_one || '1.10.2',
     FlagVersionOne: _C.jQuery_flag_version_one || '1',
     HttpRoot: _C.http_root || '/',
-    DircName: _C.jQuery_dirname || 'jQuery',
+    DircName: _C.jQuery_dirname || 'path_jQuery',
     Jquery: 'jquery',
     Js: 'js',
     Min: 'min'
