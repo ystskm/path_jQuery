@@ -1,7 +1,7 @@
 {
   "name": "path_jquery",
   "description": "provide path of a file of jQuery.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "ystskm <brilliantpenguin@gmail.com> | ystk_skm@twitter",
   "repository": {
         "type": "git",

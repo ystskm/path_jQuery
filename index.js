@@ -7,32 +7,32 @@
     return;
 
   //READ EXTERNAL_CONDITION
-  var _C = global.EXTERNAL_CONDITION || {}, Cons = {
-    Version: _C.jQuery_version || '2.1.1',
-    VersionOne: _C.jQuery_version_one || '1.10.2',
-    FlagVersionOne: _C.jQuery_flag_version_one || '1',
-    HttpRoot: _C.http_root || '/',
-    DircName: _C.jQuery_dirname || 'path_jQuery',
-    Jquery: 'jquery',
-    Js: 'js',
-    Min: 'min'
+  var _P = global.EXTERNAL_CONDITION || {}, P = {
+    Version: _P.jq_version || '2.1.1',
+    VersionOne: _P.jq_version_one || '1.10.2',
+    FlagVersionOne: _P.jq_flag_version_one || '1',
+    HttpRoot: _P.http_root || '/',
+    DircName: _P.jq_dirname || 'path_jquery',
+    jquery: 'jquery',
+    js: 'js',
+    min: 'min'
   };
 
-  var d = __dirname.split('/').slice(0, -1).join('/'), n = Cons.DircName;
+  var d = __dirname.split('/').slice(0, -1).join('/'), n = P.DircName;
   var r = '', p = require('path');
 
-  var js = Cons.Js, min = Cons.Min, Files = {
-    jquery: Cons.Jquery
+  var js = P.js, min = P.min, Files = {
+    jquery: P.jquery
   };
 
   var ImportAPI = {
     google: function(ver, min, ext) {
       return '://ajax.googleapis.com/ajax/libs/jquery/' + ver + '/jquery'
-        + (min ? '.' + Cons.Min: '') + (ext ? '.' + Cons.Js: '');
+        + (min ? '.' + P.min: '') + (ext ? '.' + P.js: '');
     },
     jquery: function(ver, min, ext) {
-      return '://code.jquery.com/jquery-' + ver + (min ? '.' + Cons.Min: '')
-        + (ext ? '.' + Cons.Js: '');
+      return '://code.jquery.com/jquery-' + ver + (min ? '.' + P.min: '')
+        + (ext ? '.' + P.js: '');
     }
   };
 
@@ -69,19 +69,19 @@
       return __dirname;
 
     options = mixin({
-      version: Cons.Version,
+      version: P.Version,
       minified: false,
       withroot: false,
       withname: false,
       withext: true
     }, options);
 
-    if(options.version == Cons.FlagVersionOne)
-      options.version = Cons.VersionOne;
+    if(options.version == P.FlagVersionOne)
+      options.version = P.VersionOne;
 
     var prefix = '', keys = target.split('/'), ret = keys.pop();
     if(options.withroot) {
-      prefix = Cons.HttpRoot, options.withname = true;
+      prefix = P.HttpRoot, options.withname = true;
       switch(options.withroot) {
       case 'root':
         prefix = d;
