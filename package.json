@@ -1,18 +1,21 @@
 {
   "name": "path_jquery",
-  "description": "provide path of a file of jQuery.",
-  "version": "0.0.3",
-  "author": "ystskm <brilliantpenguin@gmail.com> | ystk_skm@twitter",
+  "description": "provide path for the file of jQuery.",
+  "version": "1.0.0",
+  "author": "ystskm <sakamoto@liberty-technology.biz>",
   "repository": {
         "type": "git",
         "url": "https://ystskm@github.com/ystskm/path_jQuery.git"
     },
   "main": "./index",
   "engines": {
-    "node": ">=0.8.22"
+    "node": ">=0.10.5"
   },
   "licenses": [{
-      "type": "MIT",
-      "url": "http://github.com/ystskm/xjQuery/blob/master/LICENSE.txt"
+    "type": "MIT",
+    "url": "https://raw.githubusercontent.com/ystskm/xjQuery/master/LICENSE.md"
+  }, {
+    "type": "MIT",
+    "url": "https://jquery.org/license/"
   }]
 }

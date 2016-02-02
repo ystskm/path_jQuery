@@ -8,7 +8,7 @@
 
   //READ EXTERNAL_CONDITION
   var _P = global.EXTERNAL_CONDITION || {}, P = {
-    Version: _P.jq_version || '2.1.1',
+    Version: _P.jq_version || '2.2.0',
     VersionOne: _P.jq_version_one || '1.10.2',
     FlagVersionOne: _P.jq_flag_version_one || '1',
     HttpRoot: _P.http_root || '/',
