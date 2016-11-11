@@ -1,12 +1,12 @@
 {
   "name": "path_jquery",
-  "description": "provide path for the file of jQuery.",
-  "version": "1.0.0",
+  "description": "provide path for the file of jQuery. (latest:3.1.1)",
+  "version": "3.1.1",
   "author": "ystskm <sakamoto@liberty-technology.biz>",
   "repository": {
-        "type": "git",
-        "url": "https://ystskm@github.com/ystskm/path_jQuery.git"
-    },
+    "type": "git",
+    "url": "https://ystskm@github.com/ystskm/path_jQuery.git"
+  },
   "main": "./index",
   "engines": {
     "node": ">=0.10.5"
